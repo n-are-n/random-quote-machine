@@ -1,51 +1,62 @@
 /* *Tag */
 
 main {
-    height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    height: 100vh;
 }
+
 button {
-    font-size: medium;
     outline: none;
     border: none;
     padding: 10px 15px;
+    font-size: medium;
 }
+
 a {
-    padding: 4px 13px;
     margin-right: 5px;
+    padding: 4px 13px;
     text-decoration: none;
 }
-main > div:first-child {
-    max-width: 550px;
-    background-color: white;
-    padding: 3rem;
-}
+
 span ~ div {
     margin-top: 40px;
 }
-div > div:first-child {
-    font-size: xx-large;
-    font-family: cursive;
-    text-align: center;
-}
-main > div:last-child {
-    margin-top: 10px;
-}
-a, span {
-    font-size: x-large;
-}
-button, span {
-    float: right;
-}
+
 span, div:last-child {
     font-family: monospace;
 }
+
+main > div:last-child {
+    margin-top: 10px;
+}
+
+div > div:first-child {
+    text-align: center;
+    font-family: cursive;
+    font-size: xx-large;
+}
+
+main > div:first-child {
+    background-color: white;
+    padding: 3rem;
+    max-width: 550px;
+}
+
+a, span {
+    font-size: x-large;
+}
+
+button, span {
+    float: right;
+}
+
 a, button, main > div:last-child{
     color: white;
 }
+
 a, button, main > div:first-child {
     border-radius: 4px;
 }
@@ -53,15 +64,16 @@ a, button, main > div:first-child {
 /* !Class */
 
 .animate { 
-    animation: fadeIn 5s;
+    animation: fade-in 5s;
 }
 
 /* ? Animations */
 
-@keyframes fadeIn {
+@keyframes fade-in {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
