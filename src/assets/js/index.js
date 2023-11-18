@@ -51,3 +51,5 @@ function getQuote () {
 
 window.addEventListener('DOMContentLoaded', getData)
 document.getElementsByTagName('button')[0].addEventListener('click', getQuote)
+
+export { generateRandomNumber }
