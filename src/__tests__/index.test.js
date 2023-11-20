@@ -1,5 +1,5 @@
 /**
  * @jest-environment jest-environment-jsdom
  */
-import { generateRandomNumber } from "../assets/js/index"
-test('generate random number', () => expect(generateRandomNumber(5)).toBe(typeof Number))
+import { generateRandomNumber } from '../assets/js/index'
+test('generate random number', () => expect(typeof generateRandomNumber(5)).toBe('number'))
