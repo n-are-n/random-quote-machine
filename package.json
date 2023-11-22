@@ -4,9 +4,10 @@
   "description": "generate random quotes",
   "main": "index.js",
   "scripts": {
-    "lint-css": "stylelint --fix \"src/**/*.css\"",
-    "lint-js": "eslint --fix \"src/**/*.js\"",
-    "test": "jest --coverage",
+    "lint:css": "stylelint --fix \"src/**/*.css\"",
+    "lint:js": "eslint --fix \"src/**/*.js\"",
+    "test:unit": "jest",
+    "test:unit-coverage": "jest --coverage",
     "build": "webpack"
   },
   "repository": {

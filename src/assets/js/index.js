@@ -34,7 +34,7 @@ function getQuote () {
   let randomColor = generateRandomNumber(5)
   try {
     applyAnimation(quote, author)
-    quote.offsetWidth
+    quote.offsetWidth // Bad Practice
     author.offsetWidth
     applyAnimation(quote, author)
     updateElementContent([author, quote], ['- '.concat(data.quotes[randomQuote].author), '" '.concat(data.quotes[randomQuote].quote)])

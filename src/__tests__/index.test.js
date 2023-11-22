@@ -3,3 +3,4 @@
  */
 import { generateRandomNumber } from '../assets/js/index'
 test('generate random number', () => expect(typeof generateRandomNumber(5)).toBe('number'))
+test('added class to element', () => {})
