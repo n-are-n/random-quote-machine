@@ -5,11 +5,12 @@ import GET from './../assets/js/API'
 beforeEach(() => {
   jest.mock('node-fetch')
 })
-test('API should return json data', () => {
+test('API should return json data', async () => {
   jest.spyOn(global, 'fetch').mockResolvedValueOnce({
     json: jest.fn().mockResolvedValueOnce({ quotes: [] })
   })
-  return GET().then(data => expect(data).toHaveProperty('quotes'))
+  const data = await GET()
+  return expect(data).toHaveProperty('quotes')
 })
 test('API should handle errors', async () => {
   jest.spyOn(console, 'error').mockImplementation(() => {})
